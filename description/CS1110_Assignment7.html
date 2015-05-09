@@ -1,0 +1,2441 @@
+
+<!-- saved from url=(0087)http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>CS 1110: Assignment 7</title>
+<link href="./CS1110_Assignment7_files/style.css" type="text/css" rel="stylesheet">
+<style type="text/css"></style><style>.lookupEAGFOH, .lookupforemostEAGFOH, .lookupdockedEAGFOH, .rowiframeEAGFOH, .celliframeEAGFOH, .iframeEAGFOH, .emptyEAGFOH, .barEAGFOH, .barforemostEAGFOH, .bardockedEAGFOH, .cellEAGFOH, .leftEAGFOH, .rightEAGFOH, .buttoncontainerEAGFOH, .buttonEAGFOH, .buttonimageEAGFOH, .waitingEAGFOH, .handleEAGFOH, .queryEAGFOH, .hintEAGFOH, .templateEAGFOH, .firstlevelgroupEAGFOH, .notfirstlevelgroupEAGFOH{
+	    background: none !important;
+	    border: 0px !important;
+	    border-style: none !important;
+	     color: black !important;
+	     direction: ltr !important;
+	     float: none !important;
+	     font-family: sans-serif !important;
+	     font-size: small !important;
+	     font-style: normal !important;
+	     font-variant: normal !important;
+	     font-weight: normal !important;
+	     letter-spacing: normal !important;
+	     line-height: normal !important;
+	     margin: 0px !important;
+	    padding: 0px !important;
+	    text-align: left !important;
+	     text-decoration: none !important;
+	     text-indent: 0px !important;
+	     text-transform: none !important;
+	     vertical-align: baseline !important;
+	    white-space: normal !important;
+}
+
+div.lookupEAGFOH{
+	     display: table !important;
+	     -webkit-transition: -webkit-box-shadow 0.25s linear, border-color 0.25s linear !important;
+}
+
+div.lookupforemostEAGFOH{
+}
+
+div.lookupdockedEAGFOH{
+}
+
+div.rowiframeEAGFOH{
+	     display: table-row !important;
+}
+
+div.rowiframeEAGFOH td.celliframeEAGFOH{
+	      display: table-cell !important;
+	      width: 100% !important;
+	      height: 100% !important;
+}
+
+td.celliframeEAGFOH iframe.iframeEAGFOH{
+	       display: inline !important;
+	       width: 100% !important;
+	       height: 100% !important;
+	       background-color: white !important;
+}
+
+iframe.emptyEAGFOH{
+	       background-image: url('chrome-extension://hljnlfolmbmibdjaikiaepgepgnldclj/img/128.png') !important;
+	       background-position: 50% 50% !important;
+	       background-repeat: no-repeat !important;
+}
+
+div.barEAGFOH{
+	     display: table-row !important;
+	     -webkit-transition: background 0.25s linear !important;
+	     width: 100% !important;
+	     cursor: move !important;
+	     background: lightgrey !important;
+}
+
+div.barforemostEAGFOH{
+	background: #84b7ea !important;
+}
+
+div.bardockedEAGFOH{
+	background: #336699 !important;
+}
+
+div.barEAGFOH div.cellEAGFOH{
+	     display: table-cell !important;
+	     vertical-align: middle !important;
+}
+
+div.leftEAGFOH{
+	     padding-right: 16px !important;
+	     text-align: left !important;
+}
+
+div.rightEAGFOH{
+	     white-space: nowrap !important;
+	     text-align: right !important;
+}
+
+span.buttoncontainerEAGFOH{
+	     display:inline !important;
+}
+
+a.buttonEAGFOH:link{
+	     display:inline !important;
+	     -webkit-user-select: none !important;
+	     color: transparent !important;
+}
+
+a.buttonEAGFOH img.buttonimageEAGFOH{
+	     display:inline !important;
+	     vertical-align: middle !important;
+}
+
+img.waitingEAGFOH{
+	     display:inline !important;
+	     cursor: pointer !important;
+	     -webkit-user-select: none !important;
+	     vertical-align: middle !important;
+	     padding-left: 6px !important;
+	 padding-right: 6px !important;
+}
+
+div.handleEAGFOH{
+	     display:block !important;
+	     cursor: se-resize !important;
+	     left: 100% !important;
+	     top: 100% !important;
+	     margin-left: -4px !important;
+	     margin-top: -4px !important;
+	     position: absolute !important;
+	     width: 8px !important;
+	 height: 8px !important;
+}
+
+input.queryEAGFOH{
+	     display:inline-block !important;
+	     background: white !important;
+	     vertical-align: top !important;
+	     border: 1px solid darkgrey !important;
+	      font-size: 13px !important;
+	      padding-top: 1px !important;
+	 padding-bottom: 1px !important;
+	     width: 12em !important;
+}
+
+.hintEAGFOH{
+	      color: lightgrey !important;
+	      font-style:italic !important;
+}
+
+select.templateEAGFOH{
+	     display:inline-block !important;
+	     background: white !important;
+	     font-size: 13px !important;
+	      border: 1px solid darkgrey !important;
+	      vertical-align: top !important;
+	     white-space: pre !important;
+	     width: 9em !important;
+	     margin-right: 2px !important;
+}
+
+optgroup.firstlevelgroupEAGFOH{
+	      color: blue !important;
+}
+
+.notfirstlevelgroupEAGFOH{
+	      color: black !important;
+}
+
+</style><style>.tipEBTEIU, .arrowEBTEIU, .arrowupEBTEIU, .arrowdownEBTEIU, .mainEBTEIU, .closeEBTEIU, .barEBTEIU, .rowEBTEIU, .cellEBTEIU, .leftEBTEIU, .rightEBTEIU, .displaytitleEBTEIU, .refreshEBTEIU, .pagingEBTEIU, .brandEBTEIU, .textEBTEIU, .leftlabelEBTEIU, .selectEBTEIU, .checkboxEBTEIU, .waitingEBTEIU, .buttoncontainerEBTEIU, .buttonEBTEIU, .buttonimageEBTEIU, .flagEBTEIU, .noticebarscontainerEBTEIU, .noticebarEBTEIU, .iframecontentEBTEIU{
+	    background: none !important;
+	    border: 0px !important;
+	    border-style: none !important;
+	     color: black !important;
+	     direction: ltr !important;
+	     float: none !important;
+	     font-family: sans-serif !important;
+	     font-size: small !important;
+	     font-style: normal !important;
+	     font-variant: normal !important;
+	     font-weight: normal !important;
+	     letter-spacing: normal !important;
+	     line-height: normal !important;
+	     margin: 0px !important;
+	    padding: 0px !important;
+	    text-align: left !important;
+	     text-decoration: none !important;
+	     text-indent: 0px !important;
+	     text-transform: none !important;
+	     vertical-align: baseline !important;
+	    white-space: normal !important;
+}
+
+div.tipEBTEIU{
+	     position: absolute !important;
+	     display:block !important;
+}
+
+div.arrowEBTEIU{
+	display:block !important;
+}
+
+canvas.arrowupEBTEIU{
+	      display: inline !important;
+	      vertical-align: bottom !important;
+}
+
+canvas.downupEBTEIU{
+	      display: inline !important;
+	      vertical-align: top !important;
+}
+
+div.mainEBTEIU{
+	display: block !important;
+}
+
+img.closeEBTEIU{
+	      display: block !important;
+	      -webkit-transition: opacity 0.5s linear !important;
+	      float: right !important;
+	      margin-right: -5px !important;
+	      margin-top: -5px !important;
+}
+
+div.barEBTEIU{
+	     display: table !important;
+	      margin-bottom: 4px !important;
+	     -webkit-user-select: none !important;
+	     width: 100% !important;
+}
+
+div.rowEBTEIU{
+	display: table-row !important;
+}
+
+div.cellEBTEIU{
+	      display: table-cell !important;
+	      vertical-align: middle !important;
+}
+
+.leftEBTEIU{
+	      padding-right: 16px !important;
+	      text-align: left !important;
+}
+
+.rightEBTEIU{
+	text-align: right !important;
+}
+
+span.refreshEBTEIU{
+	display: inline !important;
+}
+
+span.pagingEBTEIU{
+	      display: inline !important;
+	      font-size: x-small !important;
+}
+
+span.buttoncontainerEBTEIU{
+	display: inline !important;
+}
+
+span.displaytitleEBTEIU{
+	      display: inline !important;
+	      padding-left: 6px !important;
+	      font-size: small !important;
+	      font-weight: bold !important;
+}
+
+span.displaytitleEBTEIU a:link{
+	       display: inline !important;
+	       color: #0645AD !important;
+	       text-decoration: none !important;
+}
+
+span.displaytitleEBTEIU img{
+	display: inline !important;
+}
+
+span.brandEBTEIU{
+	      display: inline !important;
+	      font-size: x-small !important;
+}
+
+.brandEBTEIU a{
+	       display: inline !important;
+	       font-size: x-small !important;
+}
+
+.brandEBTEIU a:link{
+	       display: inline !important;
+	       color: #0645AD !important;
+	       text-decoration: none !important;
+}
+
+.brandEBTEIU a:visited{
+	       display: inline !important;
+	       color: #0B0080 !important;
+	       text-decoration: none !important;
+}
+
+span.textEBTEIU{
+	      display: inline !important;
+	      font-size: x-small !important;
+}
+
+label.leftlabelEBTEIU{
+	      display: inline !important;
+	      font-size: x-small !important;
+	      margin-right: 3px !important;
+}
+
+select.selectEBTEIU{
+	       display: inline-block !important;
+	       border: 1px solid darkgrey !important;
+	       white-space: pre !important;
+	       font-size: x-small !important;
+}
+
+input.checkboxEBTEIU{
+	      display: inline-block !important;
+	      vertical-align: text-top !important;
+	      font-size: x-small !important;
+	      margin-right: 0.3em !important;
+}
+
+img.waitingEBTEIU{
+	      display: inline !important;
+	      -webkit-user-select: none !important;
+	      vertical-align: middle !important;
+	      padding-left: 3px !important;
+}
+
+a.buttonEBTEIU, a.buttonEBTEIU:link{
+	      display: inline !important;
+	      -webkit-user-select: none !important;
+	      color: transparent !important;
+	      margin-right: 2px !important;
+}
+
+img.buttonimageEBTEIU{
+	      display: inline !important;
+	      vertical-align: middle !important;
+}
+
+img.flagEBTEIU{
+	      display: inline !important;
+	      vertical-align: middle !important;
+	      padding-bottom:2px !important;
+}
+
+img.buttonselectedEBTEIU{
+	      display: inline !important;
+	      background: #dd8 !important;
+	      border: 1px solid #bb6 !important;
+	      margin: -1px !important;
+	      border-radius: 2px !important;
+}
+
+div.noticebarscontainerEBTEIU{
+	     display: block !important;
+	     text-align: left !important;
+	     margin-bottom: 4px !important;
+	     overflow-y: auto !important;
+}
+
+div.noticebarEBTEIU{
+	     display: block !important;
+	     background: white !important;
+	     font-size: x-small !important;
+	     border-left: 3px solid lightGrey !important;
+	     margin-bottom: 1px !important;
+	     padding-left: 2px !important;
+}
+
+div.noticebarEBTEIU img{
+	      display: inline !important;
+	      margin-right: 1px !important;
+	      vertical-align: text-top !important;
+}
+
+div.noticebarEBTEIU a{
+	      display: inline !important;
+	      font-family: sans-serif !important;
+	       font-style: normal !important;
+	       font-variant: normal !important;
+	       font-weight: normal !important;
+	       font-size: x-small !important;
+}
+
+div.noticebarEBTEIU a:link{
+	      display: inline !important;
+	      color: #0645AD !important;
+	      text-decoration: none !important;
+}
+
+div.noticebarEBTEIU a:visited{
+	      display: inline !important;
+	      color: #0B0080 !important;
+	      text-decoration: none !important;
+}
+
+iframe.iframecontentEBTEIU{
+	     display: inline !important;
+	     width: 100% !important;
+}
+
+</style><style id="simplehl_hlstyle_ZSGHJR">.simplehl1_CQKRJZ { display: inline!important;font-family:inherit!important; font-style:inherit!important; font-variant:inherit!important; font-weight:inherit!important; border-color: transparent !important; color: #000000!important; background-color: rgba(255,0,0,0.7)!important; font-size: inherit!important; -webkit-transition-property: color, background-color, -webkit-box-shadow; -webkit-transition-duration: 0.5s, 0.5s, 0.5s; -webkit-transition-timing-function: linear, linear, linear; padding: 0.2em!important; -webkit-box-shadow: rgba(0,0,0,0.42) 3px 3px 4px!important; border-radius: 6px!important; } .simplehl2_CQKRJZ { display: inline!important;font-family:inherit!important; font-style:inherit!important; font-variant:inherit!important; font-weight:inherit!important; border-color: transparent !important; color: #000000!important; background-color: rgba(255,165,0,0.7)!important; font-size: inherit!important; -webkit-transition-property: color, background-color, -webkit-box-shadow; -webkit-transition-duration: 0.5s, 0.5s, 0.5s; -webkit-transition-timing-function: linear, linear, linear; padding: 0.2em!important; -webkit-box-shadow: rgba(0,0,0,0.42) 3px 3px 4px!important; border-radius: 6px!important; } .simplehl3_CQKRJZ { display: inline!important;font-family:inherit!important; font-style:inherit!important; font-variant:inherit!important; font-weight:inherit!important; border-color: transparent !important; color: #000000!important; background-color: rgba(255,255,96,0.7)!important; font-size: inherit!important; -webkit-transition-property: color, background-color, -webkit-box-shadow; -webkit-transition-duration: 0.5s, 0.5s, 0.5s; -webkit-transition-timing-function: linear, linear, linear; padding: 0.2em!important; -webkit-box-shadow: rgba(0,0,0,0.42) 3px 3px 4px!important; border-radius: 6px!important; } .simplehl4_CQKRJZ { display: inline!important;font-family:inherit!important; font-style:inherit!important; font-variant:inherit!important; font-weight:inherit!important; border-color: transparent !important; color: #000000!important; background-color: rgba(96,255,96,0.7)!important; font-size: inherit!important; -webkit-transition-property: color, background-color, -webkit-box-shadow; -webkit-transition-duration: 0.5s, 0.5s, 0.5s; -webkit-transition-timing-function: linear, linear, linear; padding: 0.2em!important; -webkit-box-shadow: rgba(0,0,0,0.42) 3px 3px 4px!important; border-radius: 6px!important; } .simplehl5_CQKRJZ { display: inline!important;font-family:inherit!important; font-style:inherit!important; font-variant:inherit!important; font-weight:inherit!important; border-color: transparent !important; color: #000000!important; background-color: rgba(96,255,255,0.7)!important; font-size: inherit!important; -webkit-transition-property: color, background-color, -webkit-box-shadow; -webkit-transition-duration: 0.5s, 0.5s, 0.5s; -webkit-transition-timing-function: linear, linear, linear; padding: 0.2em!important; -webkit-box-shadow: rgba(0,0,0,0.42) 3px 3px 4px!important; border-radius: 6px!important; } .simplehl6_CQKRJZ { display: inline!important;font-family:inherit!important; font-style:inherit!important; font-variant:inherit!important; font-weight:inherit!important; border-color: transparent !important; color: #000000!important; background-color: rgba(255,96,255,0.7)!important; font-size: inherit!important; -webkit-transition-property: color, background-color, -webkit-box-shadow; -webkit-transition-duration: 0.5s, 0.5s, 0.5s; -webkit-transition-timing-function: linear, linear, linear; padding: 0.2em!important; -webkit-box-shadow: rgba(0,0,0,0.42) 3px 3px 4px!important; border-radius: 6px!important; } .simplehl7_CQKRJZ { display: inline!important;font-family:inherit!important; font-style:inherit!important; font-variant:inherit!important; font-weight:inherit!important; border-color: transparent !important; color: #ffffff!important; background-color: rgba(0,0,0,0.7)!important; font-size: inherit!important; -webkit-transition-property: color, background-color, -webkit-box-shadow; -webkit-transition-duration: 0.5s, 0.5s, 0.5s; -webkit-transition-timing-function: linear, linear, linear; padding: 0.2em!important; -webkit-box-shadow: rgba(0,0,0,0.42) 3px 3px 4px!important; border-radius: 6px!important; } </style><style id="simplehl_flashstyle_CUQPAO">@-webkit-keyframes flash {         0% {             opacity: 1;         }         100% {             opacity: 0;         }}</style></head>
+
+<body cz-shortcut-listen="true">
+
+
+<table align="left" width="900" border="0" id="bodyTable" cellspacing="0" cellpadding="0">
+<tbody><tr>
+	<td id="headerLeft">
+	<p>
+	T-Th 9:05<br>
+	or<br>
+	T-Th 11:15<br>
+	in Olin 155
+	</p>
+	</td>
+	<td id="headerRight" nowrap="">
+		<p id="title">CS 1110: Introduction to Computing Using Python</p>
+		<p id="term">Fall 2014</p>
+	</td>
+</tr>
+<tr>
+	<td id="navMenu"> 
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/index.php">Main</a>
+	<hr>
+	<b>About:</b><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/announcements.php">Announcements</a><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/about/staff.php">Staff</a><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/about/consultants.php">Consultants</a><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/about/times.php">Times &amp; Places</a><br>	
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/about/calendar.php">Calendar</a><br>
+	<hr>
+	<b>Materials:</b><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/materials/texts.php">Texts</a><br>	
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/materials/python.php">Python</a><br>		
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/materials/command.php">Command Shell</a><br>		
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/materials/definitions.php">Terminology</a><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.videonote.com/cornell">VideoNote</a><br>
+	<hr>
+	<b>Handouts:</b><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/lectures/index.php">Lectures</a><br>	
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/index.php">Assignments</a><br>	
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/labs/index.php">Labs</a><br>	
+	<hr>
+	<b>Assessment:</b><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/about/grading.php">Grading</a><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/exams/index.php">Exams</a><br>	
+	<hr>
+	<b>Resources:</b><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://cms.csuglab.cornell.edu/">CMS</a><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://piazza.com/cornell/fall2014/cs1110/home">Piazza</a><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/resources/aew.php">AEWs</a><br>	
+	&nbsp;&nbsp;&nbsp;<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/resources/faq.php">FAQ</a><br>	
+	&nbsp;&nbsp;&nbsp;<a href="http://docs.python.org/library/">Python API</a><br>
+	&nbsp;&nbsp;&nbsp;<a href="http://pythontutor.com/visualize.html">Python Tutor</a><br>
+	<hr>
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/materials/style.php">Style Guide</a><br>
+	<hr>
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/about/integrity.php">	Academic Integrity</a>
+	</td>
+	
+	<!-- Main Content -->
+	<td id="mainContent"> 
+<h1>Assignment 7:<br> <span style="color:0000CC">Breakout</span></h1>
+<p style="color: 990000"><b>
+Due to <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/cms.csuglab.cornell.edu">CMS</a> by Wednesday, December 10th at 11:59 pm.
+</b></p>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+
+
+<table>
+<tbody><tr>
+<td>
+<p>
+This assignment, including some of the wording of this document, is adapted from 
+an assignment by Professor Eric Roberts at Stanford University. Your task is to 
+write the classic arcade game <a href="http://en.wikipedia.org/wiki/Breakout_(video_game)">
+<i>Breakout</i></a>.
+</p>
+
+<p>
+If you have never played Breakout before, there are lots of versions online, 
+particularly as flash games.  The 
+<a href="http://www.gamesloth.com/games/Classic_Breakout">old school versions</a>
+give you an example of the basic gameplay, though they are considered boring by 
+modern standards.  Most of the modern versions of <i>Breakout</i> were inspired 
+by the <a href="http://en.wikipedia.org/wiki/Arkanoid"><i>Arkanoid</i></a>
+series and have power-ups, lasers, and all sorts of weird features.
+The flash game <a href="http://www.mofunzone.com/online_games/star_ball.shtml">Star Ball</a>
+is an example of a fairly elaborate Breakout variant.
+</p>
+
+<p>
+One of the main challenges with this assignment is its scope is completely up to you.  
+There is a bare minimum of functionality that you must implement; you must have all the 
+features of an old-school <i>Breakout</i> game. But after that point, you are free 
+(and encouraged) to add more <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#extend">interesting features</a> to your game.  
+The video to the right shows our solution, which has several extra features such as 
+sound and a countdown timer.  You should not feel compelled to add these features to 
+your game.  You are permitted to do anything that you want, provided that the basic 
+functionality is there.
+
+</p>
+</td>
+<td width="10">
+</td><td>
+<div style="border: solid 0 #060; border-left-width:2px; border-right-width:2px; border-top-width:2px; border-bottom-width:2px; padding-left:0.5ex">
+<video width="240" height="320" controls="controls">
+  <source src="images/breakout.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div></td>
+</tr></tbody></table>
+
+<p>
+Despite any difficulties you might have had with previous assignments, we know
+that this assignment is easily within your grasp.  You just have to start early, 
+break the problem up into manageable pieces, and program/test incrementally. Below, 
+we discuss stages of implementation and give suggestions for staying on top of the 
+project. If you follow our advice and test each piece thoroughly before proceeding 
+to the next, you should be successful. 
+</p>
+
+<p>
+Our bare minimum solution is about 700 lines of code.  This is ~230 lines in 
+<tt>breakout.py</tt> (including the ~140 lines already there), ~200 lines in 
+<tt>gameplay.py</tt> (including the ~70 lines already there), and ~220 lines in 
+<tt>models.py</tt> (including the ~100 lines already there).  So you should expect
+to be write around 500 lines of code for the bare minimum solution. While this may
+seem intimidating, a good amount of that is headers and specification.  Our minimum
+solution has 20 methods across all four classes, not including getters and setters.
+</p>
+
+<hr width="50%">
+
+<h3>Learning Objectives</h3>
+
+<p>
+This final assignment has several important objectives.
+</p>
+
+<ul>
+	<li style="margin-top:5pt">
+	It gives you practice with reading official class documentation and APIs.
+	</li>
+	<li style="margin-top:5pt">
+	It gives you experience using stateful controllers to handle a complex, interactive application.
+	</li>
+	<li style="margin-top:5pt">
+	It gives you experience with designing helper functions to structure your code properly.
+	</li>
+	<li style="margin-top:5pt">
+	It gives you experience with using constants to make your code more readable.
+	</li>
+	<li style="margin-top:5pt">
+	It gives you experience with programming animation and simple physics.
+	</li>
+	<li style="margin-top:5pt">
+	It gives you experience with an open-ended project that is not fully-specified.
+	</li>
+	<li style="margin-top:5pt">
+	It brings together everything you have learned in this class in one final assignment.
+	</li>
+</ul>
+
+<hr>
+
+<h2>Table of Contents</h2>
+
+<p><em>Authors</em>: W. White, D. Gries, E. Roberts</p>
+
+<ul>
+	<li style="margin-top:3pt">
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#academic">Academic Integrity and Collaboration</a>
+	</li>
+	<li style="margin-top:3pt">
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#started">Organization and Scope</a>
+	</li>
+	<li style="margin-top:3pt">
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#breakout">Breakout</a>
+	</li>
+	<li style="margin-top:3pt">
+	<a href="./CS1110_Assignment7_files/CS1110_Assignment7.html">The Basic Game</a>
+	</li>
+	<ul>
+		<li style="margin-top:3pt">
+		<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-welcome">Create a Welcome Screen</a>
+		</li>
+		<li style="margin-top:3pt">
+		<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-bricks">Set up the Bricks</a>
+		</li>
+		<li style="margin-top:3pt">
+		<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-paddle">Create (and Animate) the Paddle</a>
+		</li>
+		<li style="margin-top:3pt">
+		<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-ball">Create a Ball and Make it Bounce</a>
+		</li>
+		<li style="margin-top:3pt">
+		<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-collisions">Check for Collisions</a>
+		</li>
+		<li style="margin-top:3pt">
+		<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-finish">Finish the Game</a>
+		</li>
+	</ul>
+	<li style="margin-top:3pt">
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#extend">Extending the Game</a>
+	</li>
+	<li style="margin-top:3pt">
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#finishing">Finishing the Assignment</a>
+	</li>
+	<li style="margin-top:3pt">
+	<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#faq">Appendix: Frequently Asked Questions</a>
+	</li>
+</ul>
+
+<hr>
+
+<a name="academic"></a>
+<h2>Academic Integrity and Collaboration</h2>
+
+<a name="academic-integrity"></a>
+<h3>Academic Integrity</h3>
+
+<p>
+This is a classic assignment that we are giving again because students really 
+like it. You might even find some old solutions out there if you look really
+hard. There are some major modifications made in the assignment this year, however. 
+We are always making changes to the architecture to make the assignment a little
+more interesting.
+</p>
+
+<p>
+Even though this assignment is different, please do not look up the old solution. 
+That is still a violation of academic integrity, and copying code (without attribution) 
+from that solution is an instance of plagiarism. The program Moss checks for similarity 
+in parts of the code, not just all of it. If you copy code from the old solution (even
+though it is different) we will know.  The code is too complex for accidental
+similarities to happen.
+</p>
+
+<hr width="50%">
+
+<a name="academic-sampling"></a>
+<h3>Code Attribution</h3>
+
+<p>
+There is a lot of code available for you to use in in the 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/lectures/11-20-14/presentation-24.pdf">Lecture on OO Design</a>.
+The <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/animation.py">animation</a>, <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/subcontroller.py">subcontroller</a>,
+and <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/touch.py">etch-a-sketch</a> examples are particularly useful.  
+You are permitted to copy whatever code you want from these (or other samples).
+</p>
+
+<p>
+However, if you copy code you <b>must</b> cite the source.  This is no
+different than quoting a book or article in an essay or research paper.  
+In the function specification, you should add a paragraph citing the
+source module and the original authors (likely the CS 1110 instructors).
+You must cite your source even if you make changes; that is no 
+different than paraphrasing a quote in an essay or research paper.
+</p>
+
+<p>
+Unless you make drastic changes, Moss will catch any copying of the demo code from 
+lecture. Do it right; cite the source.
+</p>
+
+<hr width="50%">
+
+<a name="academic-copyright"></a>
+<h3>Copyrighted Material</h3>
+
+<p>
+There is another Academic Integrity issue with this assignment: copyrighted material.
+You do not own the rights to PokÃ©mon. PokÃ©mon is owned by Nintendo.  The president of
+Nintendo America is a Cornell alum.  Please do not encourage our alums to sue us by
+using PokÃ©mon artwork in your game.
+</p>
+
+<p>
+In general, you are only allowed to use copyrighted material if you have a license to
+do so.  For example, many of the songs and sound effects in the 
+<a href="http://www.newgrounds.com/audio/">NewGrounds library</a> 
+are available for you to use under an <i>Attribution License</i>.  That means you are
+free to use it so long as you cite the source in your documentation (e.g. your header
+comments).  This is okay.  A license where you have to pay is not okay.
+</p>
+
+<p>
+If you are in doubt as to whether you have a license to use something, ask us on Piazza.
+</p>
+
+<hr width="50%">
+
+<a name="academic-collaboration"></a>
+<h3>Collaboration Policy</h3>
+
+<p>
+You may do this assignment with one other person. If you are going to work 
+together, then form your group on CMS as soon as possible. If you do this 
+assignment with another person, you must work together. It is against the 
+rules for one person to do some programming on this assignment without the 
+other person sitting nearby and helping.
+</p>
+
+<p>
+We are allowing some limited additional collaboration. If you want to talk to other
+people in the class about how you broke up your code -- what goes in 
+<tt>gameplay.py</tt> and what goes in <tt>models.py</tt> -- you may do that
+as well.  If you want ideas for method specifications, that is okay.  The number
+1 rule is this: <b>with the exception of your CMS-registered partner, please do not 
+look at anyone  else's code or show your code to anyone else, in any form what-so-ever</b>.  
+</p>
+
+<hr>
+
+<a name="started"></a>
+<h2>Organization and Scope</h2>
+
+<p>
+This is very long assignment, much like <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment4">Assignment 4</a>. 
+However, both I and the consultants have a lot more experience with this assignment, 
+and so it should go much smoother. Once gain, the trick is to 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#started-pacing">pace yourself</a>.  While there are no unit tests this time, 
+you should be able to figure out if everything is working simply by playing the game.
+</p>
+
+
+<a name="started-source"></a>
+<h3>Assignment Source Code</h3>
+
+<p>
+The first thing to do in this assignment is to download the zip file 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/A7.zip">A7.zip</a> from this link.  You should unzip it and 
+<em>put the contents in a new directory</em>. This time, you are going
+to get a directory with a lot more than usual. In particular, this 
+zip file contains the following:
+</p>
+
+<dl>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/code/breakout.py"><code>breakout.py</code></a></dt>
+<dd>
+This file contains the <b>controller</b> class <code>Breakout</code>.
+This is the controller that launches the application.  It is one of three
+modules that you will modify for this assignment. While it is the primary
+controller class, you will note that it has no script code.  For that,
+you will use the module <code>__main__.py</code> below.
+</dd>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/code/gameplay.py"><code>gameplay.py</code></a></dt>
+<dd>
+This file contains the secondary <b>controller</b> class <code>Gameplay</code>.
+This class manages a single game of breakout.  It works as a subcontroller,
+just like the example <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/subcontroller.py"><tt>subcontroller</tt></a>
+from class. It is another of the three modules that you will modify for this assignment,
+and the one that will require the most original code.
+</dd>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/code/models.py"><code>models.py</code></a></dt>
+<dd>
+This file contains the <b>model</b> classes <code>Ball</code> and
+<code>BrickWall</code>.  If you want to add other model classes (such 
+as for your Paddle), then you add those here as well. This is the last of 
+the three files you should modify for this assignment.
+</dd>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/code/constants.py"><code>constants.py</code></a></dt>
+<dd>
+This is a module filled with constants (global variables that should
+not ever change). It is used by both <code>breakout.py</code>,
+<code>gameplay.py</code>, and <code>models.py</code> to ensure that these 
+modules agree on certain important values. It also contains code for 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-adjust">adjusting your brick size</a>.  You should 
+only modify this file if you are adding additional constants as part 
+of your <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#expand-extensions">extended features</a>.
+</dd>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/code/game2d.py"><code>game2d.py</code></a></dt>
+<dd>
+This file contains the <b>view</b> class 
+(e.g. <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gview.html"><code>GView</code></a>)
+for this application. It also contains the parent classes for your
+models and controller. <i>Under no circumstances should you ever 
+modify this file</i>!
+</dd>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/code/__main__.py"><code>__main__.py</code></a></dt>
+<dd>
+This module contains the application code for this assignment.  It is 
+the module you run from the command line to start the game.  However,
+the way that you run it is a tad unusual; see the below. <i>Do not 
+modify this file</i>!
+</dd>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/Sounds.zip"><code>Sounds</code></a></dt>
+<dd>
+This folder is a list of sound effects that you may wish to use as
+part of your <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#expand-extensions">extensions</a>. You are also 
+free to add more if you wish; just put them in this folder. All sounds 
+must be WAV or OGG files, recorded at 16 bits and sampled at 44.1 kHz
+(e.g. CD quality).  
+</dd>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/Fonts.zip"><code>Fonts</code></a></dt>
+<dd>
+This folder is a collection of True Type Fonts, should you get tired
+of the default Kivy font.  You can put whatever font you want in this
+folder, provided it is a .ttf file.  Other Font formats (such as .ttc,
+.otf, or .dfont) are not supported.
+</dd>
+<dt><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/Images.zip"><code>Images</code></a></dt>
+<dd>
+This folder is a collection of images that you may wish to use as
+part of <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#expand-extensions">your extensions</a>.  The
+class <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gimage.html"><code>GImage</code></a> allows you to 
+animate images in this game, should you wish.  You can also use it 
+to provide a background; just remember to draw the background image 
+<i>first</i>.
+</dd>
+</dl>
+
+<p>
+For the <a href="./CS1110_Assignment7_files/CS1110_Assignment7.html">basic game</a>, you will only modify the first 
+three files listed above. The class <code>Breakout</code> is a subclass 
+of the class <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gameapp.html"><code>GameApp</code></a>.  With the 
+exception of <code>BrickWall</code>, your model classes should all be subclasses
+of <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gobject.html"><code>GObject</code></a>. As part of 
+this assignment, you are expected to read the 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/index.html">online documentation</a> which describes how
+to use the basic classes.
+</p>
+
+<hr width="50%">
+
+<a name="started-running"></a>
+<h3>Running the Application</h3>
+
+<p>
+Because there are so many files involved, this application is handled a little
+differently from previous assignments. To run the application, put all of the
+files in a folder, and give the folder a 
+name like <code>breakout</code>. The file <code>__main__.py</code> turns the 
+entire folder, not just one module, into a script.  You already saw this in
+the WordApp application in <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment4">Assignment 4</a>.  
+</p>
+
+<p>
+As with that game, change the directory in your command shell to just 
+<i>outside of the folder <code>breakout</code></i> 
+and type
+</p>
+
+<blockquote><code>
+python breakout
+</code></blockquote>
+
+<p>
+In this case, Python will "run the folder" by executing the application 
+code in <code>__main__.py</code>. This trick only works when you run the 
+folder <code>breakout</code> as a script; you cannot import the folder.
+If you wanted to "import a folder" (which, for this assignment, you don't), 
+you would create a file called <code>__init__.py</code>.
+</p>
+
+<hr width="50%">
+
+<a name="started-organization"></a>
+<h3>Assignment Organization</h3>
+
+<p>
+This assignment closely follows the model-view-controller pattern
+discussed in class. The modules are clearly organized so that each holds 
+models, the view, or a controller.  The organization of these files is
+shown below. The arrows in this diagram mean "imports". So the 
+<tt>Breakout</tt> controller imports the view and <tt>Gameplay</tt>
+subcontroller.  The <tt>Gameplay</tt> controller imports the view and the
+models.  This leads to an important separation of files.  <tt>Breakout</tt>
+is never permitted to access anything in <tt>models.py</tt> and
+<tt>Gameplay</tt> is never permitted to access anything in <tt>breakout.py</tt>.
+This cuts down on those annoying meetings.
+</p>
+
+<p>
+You will notice that the models module imports the view because it needs the 
+parent class <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gobject.html"><code>GObject</code></a> to perform any 
+drawing. In practice, we often like to separate the model and view to cut down 
+on the number of arrows (less meetings).  However, that would make this
+assignment a lot harder.  Fortunately, the view does not import anything
+(and should not be modified).  This means there are no cycles in this 
+architecture (e.g. A imports B imports C imports A).  Cyclical imports 
+are very dangerous and you have to be careful with them in large applications.
+Avoiding cycles is one of the reasons we draw pictures like the one above.
+</p>
+
+
+<p align="center">
+<img width="365" height="307" align="middle" src="./CS1110_Assignment7_files/mvc.png" alt="mvc">
+</p>
+
+<p>
+In addition to the four main modules, there is another module with 
+no class or function definitions.  It only has constants, which are global 
+variables that do not change.  This is imported by the model module and the 
+two controllers; it is a way to help them share information.
+</p>
+
+<hr width="50%">
+
+<a name="started-scope"></a>
+<h3>Assignment Scope</h3>
+
+<p>
+As you can see from the <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/index.html">online documentation</a>, 
+the class <code>Breakout</code> needs to implement three main methods.
+They are as follows:  
+</p>
+
+<table id="internal" align="center">
+<thead>
+<tr> 
+	<th width="30%">Method</th>
+    <th width="70%">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td><code>init()</code></td>
+	<td>
+	Initializes the game state and attributes. Because of how Kivy works, 
+	initialization code should go here and not in the constructor 
+	(which is called <i>before</i> the window is sized properly).
+	</td>
+</tr>
+<tr>
+	<td><code>update(dt)</code></td>
+	<td>
+	Update the models for the next animation frame. The speed at which this
+	is called is determined by the (immutable) attribute <code>fps</code>,
+	which is set by the constructor.  The parameter <code>dt</code> is time 
+	since the last call to <code>update</code>.
+	</td>
+</tr>
+<tr>
+	<td><code>draw()</code></td>
+	<td>
+	Called when <tt>update</tt> is complete, and the application is ready
+	to redraw the models. Implementing this method should be as simple as
+	calling the method <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gobject.html#game2d.GObject.draw"><code>draw</code></a>
+	inherited from <code>GObject</code>.
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Obviously, you are not going to put all of your code in those three methods; 
+the result would be an unreadable mess. An important part of this assignment 
+is developing new methods whenever you need them, so that each method is small 
+and manageable. <b>Your grade will depend partly on the design of your program. 
+As one guideline, points will be deducted for methods that are more than 40 lines 
+long. This includes the specification (though <code>init</code>, <code>update</code>,
+and <code>draw</code> are exempt from this rule).</b>.
+</p>
+
+<p>
+You will also need to add methods and attributes to the classes <code>Gameplay</code>,
+<code>BrickWall</code>, and  <code>Ball</code> in <code>model.py</code>. These 
+classes are completely empty, though we have given you <i>a lot</i> of hints in
+the class specification.  You should read all these specifications.
+</p>
+
+<p>
+As you write the assignment, you may find that you need additional attributes.
+Whenever you add a new attribute to a class, you must fully state the invariant 
+in your specification. All instance attributes should be hidden. While you do 
+not need to enforce the invariants, you must have getters and setters if the 
+attributes are accessed by a class in another model.  For example, if the 
+<tt>Gameplay</tt> class needs to check the velocity of the ball, then you are
+going to need getters for the velocity in the <tt>Ball</tt> class.
+</p>
+
+<p>
+When approaching this assignment, you should always be thinking about "what 
+code goes where?" If you do not know what file to put things in, please
+ask on Piazza (but do not post code). In general, you should follow these guidelines:
+</p>
+
+<h4>Breakout</h4>
+
+<p>
+This controller does very little.  All it does is keep track of the game
+state (e.g. whether or not the game is paused).  Most of the time it 
+just calls the methods of <tt>Gameplay</tt>, and <tt>Gameplay</tt> does
+all the work.  However, if you need anything between games, like a 
+paused message or a countdown clock, this goes here.
+</p>
+
+<h4>Gameplay</h4>
+
+<p>
+This class does all the hard work.  In addition to the initializer, it 
+needs the following three methods as a bare minimum:
+</p>
+
+<ul>
+	<li style="margin-top:5pt">
+	A method to serve the ball (if it is lost, or the game is starting)
+	</li>
+	<li style="margin-top:5pt">
+	A method to move the paddle
+	</li>
+	<li style="margin-top:5pt">
+	A method to move the ball
+	</li>
+</ul>
+
+<p>
+The last one is going to be quite complex.  If you try to write it
+as a single method, you are going to violate the <a href="">40 line</a>
+rule.  So you will need to add some helpers there as well.
+</p>
+
+<p>
+In general, anything that involves <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#extend">additional gameplay</a>
+is going to go in this class.
+</p>
+
+<h4>The Models</h4>
+
+<p>
+The models just keep track of data.  Most of the time, models just have
+attributes, with getters and setters.  Think <tt>Dataset</tt> and
+<tt>Cluster</tt> from the previous assignment.  However, sometimes
+models have additional methods that perform complex computation on
+the data, like <tt>distance</tt> and <tt>updateCentroid</tt> in 
+class <tt>Cluster</tt>
+</p>
+
+<p>
+The models in this assignment are the game objects on screen: the ball,
+the paddle, and the bricks.  Of these three, it is more important to
+have a class for <tt>Ball</tt>. <tt>Ball</tt> needs additional attributes
+for its velocity, and you need several extra methods to perform complex
+calculations on this velocity.  However, you do not need an extra class
+for the paddle, since all you are doing is changing its x and y position.
+The provided class <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/grectangle.html"><code>GRectangle</code></a> 
+should be enough for paddle.
+</p>
+
+<p>
+You also do not need a class for a brick.  <code>GRectangle</code> is fine
+there as well.  However, we do want a class that stores all of the bricks,
+called <tt>BrickWall</tt>.  Again, think of <tt>Dataset</tt>.  We did not
+make you create a class for the points, but we wanted a class to store
+the points in them.  Why do we need <tt>BrickWall</tt>?  Why cannot we use
+a simple list?  That question is <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-collisions">answered below</a> 
+when we talk about collision detection.
+</p>
+
+<p>
+If your added features include power-ups, like those in <i><a href="http://en.wikipedia.org/wiki/Arkanoid">Arkanoid</a></i>, 
+then you are going to need additional model classes.  In that example, you are going
+to need a class for the paddle to keep track of what power ups it has.  As a general
+rule, if your game object needs additional attributes that are not included
+in  <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gobject.html"><code>GObject</code></a>, then you are going to have
+to create a new class.
+</p>
+
+<hr width="50%">
+
+<a name="started-pacing"></a>
+<h3>Pacing Yourself</h3>
+
+<p>
+You should start as soon as possible. If you wait until the day before this assignment 
+is due, you will have a hard time completing it. If you do one part of it every 2-3 days,
+you will enjoy it and get it done on time.  We have also tried not to include your 
+Thanksgiving Break in this assignment.
+</p>
+
+<p>
+The hard part of this assignment may be "finishing up": designing the final reorganization 
+in order to incorporate three balls in a game. We have budgeted you one day for this, but 
+you have up to four days if you decide just to do the bare minimum and not add any 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#extend">extensions</a>.
+</p>
+
+<p>
+Implement the program in stages, as described in this handout. Do not try to get 
+everything working all at once. Make sure that each stage is working before moving 
+on to the next stage.
+</p>
+
+<p>
+Set up a schedule. We have suggested some milestones, but make up your own schedule. 
+Leave time for learning things and asking questions.
+Above all, do not try to <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#extend">extend the program</a> until you 
+get the <a href="./CS1110_Assignment7_files/CS1110_Assignment7.html">basic functionality working</a>. If you add extensions too 
+early, debugging may get very difficult.
+</p>
+
+<hr width="50%">
+
+<a name="started-help"></a>
+<h3>Getting Help</h3>
+
+<p>
+We have tried to give you as much guidance in this document as we can.  However, if you are
+still lost, please see someone immediately.  Like the last few assignments, this is a fairly 
+involved project, and you should get started early. To get help, you may talk to the course
+instructor, a TA, or a consultant. See the 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/about/staff.php">staff page</a> for more information.
+</p>
+
+<p>
+In addition, you should always check <a href="http://www.piazza.com/cornell/fall2012/cs1110">Piazza</a> 
+for student questions as the assignment progresses. We may also periodically post announcements 
+regarding this assignment on Piazza and the course website.
+</p>
+
+<hr>
+
+<a name="breakout"></a>
+<h2>Breakout</h2>
+
+<p>
+The initial configuration of the game Breakout is shown in the left-most picture below. 
+The colored rectangles in the top part of the screen are bricks, and the slightly larger 
+rectangle at the bottom is the paddle. The paddle is in a fixed position in the vertical 
+dimension; it moves back and forth horizontally across the screen along with the mouse 
+(or finger, on a touch-screen device) — unless the mouse goes past the edge of the 
+window.
+</p>
+
+<table align="center">
+<tbody><tr>
+<td align="center">
+<img src="./CS1110_Assignment7_files/breakout_1.jpg" alt="" width="303" height="405" align="middle"><br>
+<b>Starting Position</b>
+</td>
+<td>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</td>
+<td align="center">
+<img src="./CS1110_Assignment7_files/breakout_2.jpg" alt="" width="303" height="405" align="middle"><br>
+<b>Hitting a Brick</b>
+</td>
+</tr>
+</tbody></table>
+
+<p>
+A complete game consists of three turns. On each turn, a ball is launched from the center 
+of the window toward the bottom of the screen at a random angle. The ball bounces off the 
+paddle and the walls of the world, in accordance with the physical principle generally 
+expressed as "the angle of incidence equals the angle of reflection" (it is easy to implement). 
+The start of a possible trajectory, bouncing off the paddle and then off the right wall, 
+is shown to the right. The dotted line is there only to show the ball's path and will
+not actually appear on the screen.
+</p>
+
+<p>
+In the second diagram above, the ball is about to collide with a brick on the bottom row. 
+When that happens, the ball bounces just as it does on any other collision, but the 
+brick disappears. The left-most diagram below shows the game after that collision and 
+after the player has moved the paddle to put it in line with the oncoming ball.
+</p>
+
+<table align="center">
+<tbody><tr>
+<td align="center">
+<img src="./CS1110_Assignment7_files/breakout_3.jpg" alt="" width="303" height="390" align="middle"><br>
+<b>Intercepting the Ball</b>
+</td>
+<td>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</td>
+<td align="center">
+<img src="./CS1110_Assignment7_files/breakout_4.jpg" alt="" width="303" height="390" align="middle"><br>
+<b>Breaking Out</b>
+</td>
+</tr>
+</tbody></table>
+
+<p>
+The play on a turn continues in this way until one of two conditions occurs:
+</p><p>
+</p><ol>
+<li>
+The ball hits the lower wall, which means that the player missed it with the paddle. 
+</li>
+<li style="margin-top:5pt">
+The last brick is eliminated.
+</li>
+</ol>
+
+<p>
+In the first case, the turn ends. If the player has a turn left, the next ball is 
+served; otherwise, the game ends in a loss.  In the second case, the player wins
+and the game ends.
+</p>
+
+<p>
+Clearing all the bricks in a particular column opens a path to the top wall. When 
+this delightful situation occurs, the ball may bounce back and forth several times 
+between the top wall and the upper line of bricks without the user having to worry 
+about hitting the ball with the paddle. This condition, a reward for "breaking out", 
+gives meaning to the name of the game. The last diagram above shows the situation 
+shortly after the first ball has broken through the wall. The ball goes on to clear 
+several more bricks before it comes back down the open channel.
+</p>
+
+<p>
+Breaking out is an exciting part of the game, but you do not have to do anything in 
+your program to make it happen. The game is operating by the same rules it always 
+applies: bouncing off walls, clearing bricks, and obeying the "laws of physics".
+</p>
+
+<hr width="50%">
+
+<a name="breakout-state"></a>
+<h3>Game State</h3>
+
+<p>
+One of the challenges with making an application like this is keeping track of the
+<i>game state</i>.  In the description above, we can identity four distinct phases
+of Breakout.
+</p>
+
+<ul>
+   <li style="margin-top:3pt">
+   Before the game starts, and the bricks are not yet set up
+   </li>
+   <li style="margin-top:3pt">
+   While the game is ongoing, and the ball is in play
+   </li>
+   <li style="margin-top:3pt">
+   While the game is ongoing, but the player is waiting for a new ball.
+   </li>
+   <li style="margin-top:3pt">
+   While the game is paused (e.g. to show a message), and game is waiting for a mouse click.
+   </li>
+   <li style="margin-top:3pt">
+   After the game is over.
+   </li>
+</ul>
+
+<p>
+Keeping these phases straight is an important part of implementing the game.
+You need this information to implement <code>update</code> in <tt>Breakout</tt>
+correctly.  For example, whenever the game is ongoing, the method <code>update</code>
+should instruct <tt>Gameplay</tt> to move the paddle.  However, if the game has not 
+started yet, the method <code>update</code> should create a new <tt>Gameplay</tt>
+object.
+</p>
+
+<p>
+For your convenience, we have provided you with constants for four states.
+</p>
+
+<ul>
+   <li style="margin-top:3pt">
+   <code>STATE_INACTIVE</code>, before a new game has started
+   </li>
+   <li style="margin-top:3pt">
+   <code>STATE_ACTIVE</code>, when the game is ongoing and ball is in play
+   </li>
+   <li style="margin-top:3pt">
+   <code>STATE_COUNTDOWN</code>, when the player is waiting for a new ball
+   </li>
+   <li style="margin-top:3pt">
+   <code>STATE_PAUSED</code>, when the game is paused to display a message
+   </li>
+   <li style="margin-top:3pt">
+   <code>STATE_COMPLETE</code>, when the game is over
+   </li>
+</ul>
+
+<p>
+All of these constants are available in <code>constants.py</code>. The current application
+state should be stored in the attribute <code>_state</code> inside <tt>Breakout</tt>.
+You are free to add more states when you work on your game <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#extend">extensions</a>.
+However, your basic game should stick to these four states.
+</p>
+
+<hr>
+
+<a name="basic"></a>
+<h2>The Basic Game</h2>
+
+<p>
+We have divided these instructions into two parts. The first part covers the 
+basic things that you must implement just to get the game running. Once you do that,
+the assignment gets more interesting.  You should try to finish everything in this 
+part of the assignment by <b>Monday, December 8</b> (after the last week of class).
+If you do that, you will be in good shape to <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#extend">add extensions</a> 
+(though you will not lose any points if you do not have extensions; they are a
+form of extra credit).
+</p>
+
+<hr width="50%">
+
+<a name="basic-constants"></a>
+<h3>Before You Do Anything</h3>
+
+<p>
+The very first thing that you should do is read the file <code>constants.py</code>.
+If you ever need a value like the size of the paddle, the size of the game window,
+or so on, this is where you go.  When writing code, you should always use the
+constants, not raw numbers (or "magic numbers," as we call them).  Magic numbers 
+make your code hard to debug.  And if you make a change (e.g. to make the ball bigger),
+you have no idea about all of the locations in your code that need to be changed.
+</p>
+
+<p>
+With that said, you are welcome to change any of these numbers if you wish.  You
+are also encouraged to add more constants if you think of other numeric values 
+that you need.  Anytime that you find yourself putting a number in your code, ask 
+yourself whether or not it would make sense as a constant.
+</p>
+
+<hr width="50%">
+
+<a name="basic-welcome"></a>
+<h3>Create a Welcome Screen</h3>
+
+<img src="./CS1110_Assignment7_files/welcome.png" alt="" width="218" height="49" hspace="10" vspace="5" align="right">
+
+<p>
+We start with a simple warm-up to get you used to defining state and drawing graphics 
+elements. When the player starts the application, they should be greeted by a welcome 
+screen. When you work on your <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#extend">extensions</a>, you can embellish your 
+welcome screen to be as fancy as you wish.  But for now, keep it simple.  
+Your initial welcome screen is going to consist of a text message.
+</p>
+
+<p>
+Because the welcome message is before any game has started, it belongs in the
+<tt>Breakout</tt> class, not the <tt>Gameplay</tt> class.  You are already seeing
+how we separate what goes where.
+</p>
+
+<p>
+The text message will look something like the one shown to the above. It does not
+need to say "Press to Play". It could say something else, as long as it is clear
+that the user needs to click the mouse (or press the screen) to continue.  You also
+do not have to use the dreaded 
+<a href="http://sixrevisions.com/graphics-design/comic-sans-the-font-everyone-loves-to-hate/">Comic Sans</a> 
+font like we have.
+</p>
+
+<p>
+To create a text message, you need to create a 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/glabel.html"><code>GLabel</code></a> and store in it an attribute. If 
+you read the specification for class <code>Breakout</code>, you will not see any
+attributes for the text message.  That means it is <b>your responsibility to add one</b>.
+You should add the description of your attribute to the class specification.
+For now, we will assume that you named the attribute <code>_message</code>, but
+you could name it anything you like.
+</p>
+
+<p>
+Since the welcome message should appear as soon as you start the game, it should 
+be created in the method  <code>init</code>, the first important method
+of the class <code>Breakout</code>. When creating your message, you will want
+to set things like the font size and position of the text. As you can see from 
+the documentation for <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/glabel.html"><code>GLabel</code></a> and 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gobject.html"><code>GObject</code></a>, graphics objects have a 
+lot of attributes to specify things such as position, size, color, font style, 
+and so on. You should experiment with these attributes to get the welcome screen 
+that you want.  The key thing to remember is that, in Kivy, that screen coordinates 
+start from the bottom-left corner of the window (and not the top right as with
+most graphics applications).
+</p>
+
+<p>
+Simply adding this code to <code>init</code> is not enough.  If you were to 
+run the application right now, all you would see is a blank white window.  
+You have to tell Python what to draw. To do this, simply add the line
+</p>
+
+<pre>    self._message.draw(self.view)
+</pre>
+
+<p>
+to the method <code>draw</code> in <code>Breakout</code>.  The (non-hidden)
+attribute <code>view</code> is a reference to the window; this instructs Python
+to draw this text label in the window. Now run the application and check if
+you see your welcome message.
+</p>
+
+<h4>Initializing Game State</h4>
+
+<p>
+The other thing that you have to do in the beginning is initialize the game state.  
+The attribute <code>_state</code> (included in the class specification) should start 
+out as <code>STATE_INACTIVE</code>.  That way we know that the game is not ongoing, 
+and that the program should (not yet) be attempting to animate anything on the screen.  
+In addition, the other attributes listed (particularly <code>_game</code>) should 
+be None; we have not done anything yet!
+</p>
+
+<p>
+The <code>_state</code> attribute is an important part of many of the invariants in 
+this game. In particular, we want your new attribute for the welcome message to 
+have the following invariant:
+</p>
+
+<ul>
+	<li style="margin-top:3pt">
+	If the state is <code>STATE_INACTIVE</code>, then there is a welcome message
+	</li>
+	<li style="margin-top:3pt">
+	If the state is not <code>STATE_INACTIVE</code>, the welcome message is None.
+	</li>
+</ul>
+
+<p>
+Does your definition of <code>init</code> satisfy this invariant?
+</p>
+
+<h4>Dismissing the Welcome Screen</h4>
+
+<p>
+The welcome screen should not show up forever.  The player should be able to 
+dismiss the welcome screen (and start a new game) when he or she clicks the 
+mouse or touches the screen. You track this with the attribute <code>touch</code>
+which is part of <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gview.html"><code>GView</code></a>. This 
+attribute is a <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gpoint.html"><code>GPoint</code></a> if the mouse 
+button is currently down, and None if it is not.
+</p>
+
+<p>
+When looking at the value <tt>touch</tt>, remember the issues that we discussed in class.
+The method <tt>update</tt> is called every 16 millisecond.  If you hold the mouse down,
+then you see a lot of touches.  You just want the first touch!  That means you need
+an attribute <tt>_last</tt> (included for you in the specification) that keeps track 
+of what <tt>touch</tt> was in the last call to <tt>update</tt>.  You know that a press
+is brand new if <tt>_last</tt> is None, but <tt>touch</tt> is not None.
+</p>
+
+<p>
+If you detect a mouse press, then you should change the state <code>STATE_INACTIVE</code> 
+to <code>STATE_COUNTDOWN</code>. The game has now started (but there is no ball, or
+even bricks yet). You are not ready to actually write the code for the game, but 
+switching states is an important first activity. 
+</p>
+
+<p>
+Invariants must be statisfied at the end of every method, so you need to assign None
+to the welcome message as well. This will require a simple change to method 
+<code>draw</code> to keep it from crashing.  Once you have done that, run the 
+application.  Does the message disappear when you click the mouse?
+</p>
+
+<h4>Important Considerations</h4>
+
+<p>
+This first part of the assignment looks relatively straightforward, but it
+gets you used to having to deal with controller state.  In this part, you 
+already immediately had to add attributes beyond the ones that we have provided.
+Whenever you a new attribute, you must add it and its corresponding invariant
+to the class specification. Add it just after the comment starting 
+"<code>ADD MORE ATTRIBUTES</code>", to make it easier for the graders (and you) 
+to find them. We will deduct style points for instance attributes that are not 
+specified. 
+</p>
+
+<p>
+<b>Try to finish this part by Sunday, November 23</b> (e.g. two days after 
+starting the assignment). You will spend most of your time reading the 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/index.html">online documentation</a>.  
+But this will give you a solid understanding of how this application works.
+</p>
+
+<hr width="50%">
+
+<a name="basic-bricks"></a>
+<h3>Create a Game and Populate it with Bricks</h3>
+
+<p>
+<img src="./CS1110_Assignment7_files/breakout_bricks.jpg" alt="" width="303" height="190" vspace="20" align="right">
+Technically, you are violating an invariant after the last step.  When you changed
+the state to <code>STATE_COUNTDOWN</code>, the attribute <code>_game</code> was 
+no longer supposed to be None. Construct a <code>Gameplay</code> object and assign
+it to this attribute.
+</p>
+
+<p>
+Right now, the subcontroller <code>Gameplay</code> does not anything data in it.  
+Eventually it is going to create the bricks, a ball, and a paddle.  Right now, we 
+are just going to focus on the bricks.
+</p>
+
+<p>
+This is going to require that you modify two different classes in two different
+files.  As a result, this activity will help you see how everything fits together.
+Read the specification for both <tt>Gameplay</tt> and <tt>BrickWall</tt>.  You
+are going to need to add an <tt>__init__</tt> method and a <tt>draw</tt> method
+to both of these classes.  These are the only four methods that you need for this
+part of the assignment.
+</p>
+
+<p>
+The <tt>__init__</tt> for <tt>Gameplay</tt> is easy.  Just construct a <tt>BrickWall</tt>
+object and assign it to the specified attribute <tt>_wall</tt>.  The <tt>draw</tt>
+method is also easy: just call the (not yet implemented) <tt>draw</tt> method in
+<tt>BrickWall</tt>.
+</p>
+
+<p>
+This means that all of the hard work is going on in class <tt>BrickWall</tt>. So go 
+read the specification for that class again.  You will see that it contains a 
+(one dimensional) list of bricks. The initializer for this class should create
+this list and add the bricks (which are all just <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/grectangle.html"><code>GRectangle</code></a>
+objects).  The <tt>draw</tt> method should draw these bricks.
+</p>
+
+<h4>Creating Bricks</h4>
+
+<p>
+As we mentioned before, the bricks should be instances of
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/grectangle.html"><code>GRectangle</code></a>.  To define a rectangle, use 
+the attributes <code>x</code>, <code>y</code>, <code>width</code>, <code>height</code>, 
+<code>linecolor</code>, and <code>fillcolor</code> to specify how it looks on screen. 
+Look at the <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/animation.py">sample code</a> from lecture to see how
+to do this. You can either assign the attributes after the object is created, or assign 
+them in the constructor using keywords.  See the online documentation for more.  When 
+you color a brick, you should set the line color so that its outline is the same color 
+as the interior (instead of black).
+</p>
+
+<p>
+To get you started, you might want to create a single <code>Brick</code> object of some 
+position and size and add it to list, just to see what happens (though you will need to
+finish <tt>draw</tt> first). Then think about how you can place the <code>BRICK_ROWS</code> 
+rows of bricks. You will probably need a loop of some kind.  We do not care if it is a 
+for-loop or a while-loop; just get the job done.
+</p>
+
+<p>
+When you are ready, you should set up the bricks as shown to the right. The number, 
+dimensions, and spacing of the bricks, as well as the distance from the top of the window 
+to the first line of bricks, are specified using global constants given in module 
+<code>constants</code>. The only value you need to compute is the <i>x</i> coordinate 
+of the first column, which should be chosen so that the bricks are centered in 
+the window, with the leftover space divided equally on the left and right sides
+(<b>Hint</b>: the leftmost brick should be placed at <i>x</i>-coordinate 
+<code>BRICK_SEP_H</code>/2). The colors of the bricks remain constant for two rows 
+and run in the following sequence: <code>RED</code>, <code>ORANGE</code>, <code>YELLOW</code>, 
+<code>GREEN</code>, <code>CYAN</code>. If there are more than 10 rows, you are to start 
+over with RED, and do the sequence again. We suggest that you add a constant
+<code>BRICK_COLORS</code> to <code>constants.py</code> that lists these colors 
+in an appropriate way to help with this.
+</p>
+
+
+<h4>Drawing Bricks</h4>
+
+<p>
+Once again, adding bricks to the model is not going to draw them on the screen.  
+Drawing is going to involve quite a chain of events here.  First, you have to
+to modify the method <code>draw</code> in <code>Breakout</code>, as this is where
+all the drawing <i>really</i> happens. You should note that the attribute of 
+<code>Breakout</code> is <code>_game</code>, not <code>_wall</code>; <code>_wall</code> 
+is an attribute of <tt>Gameplay</tt> If you are going to draw the bricks in 
+<code>Breakout</code>, you have to go through <tt>Gameplay</tt>.  Furthermore,
+writing 
+</p>
+
+<quote>
+  self._game._wall.draw(self.view)
+
+
+<p>
+is not allowed. <b>We will take off style points if a class in one module ever accesses 
+the hidden attribute of an object of a class in different module.</b>
+</p>
+
+<p>
+This is the purpose of the <tt>draw</tt> method in <tt>Gameplay</tt> and 
+<tt>BrickWall</tt>.  The <tt>draw</tt> in <tt>Breakout</tt> calls the 
+<tt>draw</tt> method in <tt>Gameplay</tt>, which calls the <tt>draw</tt>
+method in <tt>BrickWall</tt>.  The latter does all the work.  It should
+have a for-loop that draws all the bricks, using the <code>draw</code> method in
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gobject.html"><code>GObject</code></a>
+</p>
+
+<p>
+Each of these <tt>draw</tt> methods should take the <code>view</code> as a parameter, 
+just like the <code>draw</code> method in <code>GObject</code>. We do not have to
+do this in <tt>Breakout</tt> because <tt>view</tt> is already there as an attribute.
+However, neither <tt>gameplay.py</tt> nor <tt>models.py</tt> imports <tt>breakout.py</tt>, 
+so we cannot access this attribute.  Therefore, it has to be made a parameter instead.
+</p>
+
+<a name="basic-adjust"></a>
+<h4>Testing Your Code</h4>
+
+<p>
+When you are testing the later parts of this assignment, you should play with 
+just 3-4 bricks per row and 1-2 rows of bricks. This will save time and let you 
+quickly see whether the program works  correctly when the ball breaks out 
+(gets to the top of the window). It will also allow you to test when someone 
+wins or loses.  If you play with the default number of bricks (10 rows and 
+10 bricks per row), then each game will take a long time to test.
+</p>
+
+<p>
+You might assume that testing in this manner requires you to change the values 
+of the  global constants that give the number of rows and number of bricks in a 
+row. This is also undesirable, a you might forget to change them back. Instead,
+we have added some clever code in <code>constants.py</code> that allows you to
+change these constants when you start the application.
+</p>
+
+<p>
+When you run your application (again, assuming that it is in a folder called 
+<code>breakout</code>) try the command
+</p><blockquote><code>
+python breakout 3 2
+</code></blockquote>
+When you do this, Python changes the value of <code>BRICKS_IN_ROW</code> to
+3 and the value of <code>BRICK_ROWS</code> to 2.
+
+
+<p>
+You should make sure that your creation of the rows of bricks works with any 
+number of rows and any number of bricks in each row (e.g. 1, 2, ..., 10, and 
+perhaps more). This is one of the things we will be testing when we run your 
+program.
+</p>
+
+<p>
+<b>Try to finish this part by Monday, November 24</b>. All you need to do is 
+to produce the brick diagram shown above (after the welcome screen). Once you 
+have done this, you should be an expert with graphics objects.  This will give 
+you considerable confidence that you can get the rest done.
+</p>
+
+<hr width="50%">
+
+<a name="basic-paddle"></a>
+<h3>Create (and Animate) the Paddle</h3>
+
+<p>
+Next you need to create the black paddle.  Again, this is to be stored in an
+attribute of class <code>_game</code>. That means that you must create it in
+the initializer for <code>Gameplay</code> and modify your drawing code so that
+it appears. As with the bricks, the paddle should be an object of type
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/grectangle"><code>GRectangle</code></a>.
+</p>
+
+<h4>Animating the Paddle</h4>
+
+<p>
+The real challenge with this part is making the paddle move.  This is the part
+where people really start to have trouble with this assignment.  We highly
+recommend that you look at the <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/touch.py">etch-a-sketch</a>
+sample from class to help you with this part of the assignment.  The same code
+that computes a new line to draw is how you are going to determine how to move
+the paddle.
+</p>
+
+<p>
+Moving the paddle is part of the game, so that means it belongs in the 
+<code>Gameplay</code> class.  We recommend a method with a name like <tt>updatePaddle</tt>.  
+Remember that this method must be <i>called</i> within the <tt>update</tt>
+method of <tt>Breakout</tt>, or nothing will happen. The method <tt>updatePaddle</tt>
+will need access to the <tt>touch</tt> attribute of the <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gview.html"><tt>view</tt></a> 
+(which is itself an attribute in <tt>Breakout</tt>).  As class <tt>Gameplay</tt> is 
+not allowed to access any of the attributes of <tt>Breakout</tt>, that means you need 
+to pass <tt>touch</tt> as an argument in this method call.
+</p>
+
+<p>
+The paddle should only start moving once the user presses the mouse; if the mouse
+is not pressed then <code>touch</code> will be None.  Personally, we like to require 
+that the mouse press be inside of the paddle (so the paddle will not move if you press 
+outside of the paddle).  You can test this with the  
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gobject.html#game2d.GObject.contains"><code>contains</code></a>
+method inherited from <code>GObject</code>. With that said, some students
+find this makes the game frustrating, so this part is optional.
+</p>
+
+<p>
+Regardless of whether or not you do this, it is important that the paddle
+<b>should not teleport</b>. If you can click anywhere on the screen and the paddle moves 
+there instantly, you are not doing it right (and the gameplay is a bit unbalanced).
+</p>
+
+<p>
+The way to prevent teleportation is to move the paddle so that the distance between
+the paddle and place the player first pressed the mouse remains fixed at all times. 
+This requires that you know the location of both the current touch location 
+<i>and the previous touch location</i>. The attribute <code>touch</code> only stores 
+the current touch, so you will once again need a new attribute (which we did not provide).
+Add its specification to <code>Gameplay</code> and remember to initialize it in
+the <code>__init__</code> method in a way that satisfies the invariant.
+</p>
+
+<p>
+Once you have both the previous touch position and the current touch position, all
+you need to do is move the paddle by the same amount that the mouse moved. Once again, 
+you might want to refer to the <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/touch.py">etch-a-sketch</a> demo 
+shown in class for ideas on how to do this.  Remember that if you copy any code, 
+you need to cite its source in the function specification or comments.
+</p>
+
+<h4>Important Considerations</h4>
+
+<p>
+You should ensure that the paddle stays completely on the board even if the touch 
+moves off the board. If you do not do this, the paddle is going to be completely lost
+when you release the mouse. Our code for this extra feature is 3 lines long; it uses 
+the functions <code>min</code> and <code>max</code>.
+</p>
+
+<p>
+Your implementation should only allow the paddle to be moved when the game is ongoing. 
+That is, the state should either be <code>STATE_COUNTDOWN</code> or <code>STATE_ACTIVE.</code>  
+This means that <tt>update</tt> in <tt>Breakout</tt> is starting to get more complicatd.
+At this point you might want to start thinking about helper methods to organize your
+code better.  Look at the <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/state.py">state</a> demo from lecture for 
+ideas on how to organize your code.
+</p>
+
+<p>
+<b>Draw the paddle and get it to follow your mouse by November 25</b>, before heading 
+off for Thanksgiving. Moving the paddle is easy if you ignore the teleporting problem
+for now.  Just have it move to where the <tt>touch</tt> value is pointing. We will have 
+consultants on that Tuesday, before you leave.  Though there is no lab, the lab sections 
+will open as general office hours to help you.
+</p>
+
+<p>
+<b>Stop the paddle from teleporting by Monday, December 1</b>, when you get back from 
+break. You do not have to work on this over Thanksgiving if you do not want to.  
+Once you get the paddle to move properly, you have overcome the first major
+hurdle in the project, and will be in good shape for the rest of the assignment.
+</p>
+
+<hr width="50%">
+
+<a name="basic-ball"></a>
+<h3>Create a Ball and Make it Bounce</h3>
+
+<p>
+You are now past the "setup" phase and into the "play" phase of the game.  In this phase,
+a ball is created and moves and bounces appropriately.  For the most part, a ball is just
+an instance of <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gellipse.html"><code>GEllipse</code></a>.  However, since the 
+ball moves it does not just have a position.  It also has a velocity (vx,vy).  Since 
+velocity is a property of the ball, these must be attributes of the ball object. There 
+are no such attributes in <code>GEllipse</code>, so we have to subclass <code>GEllipse</code> 
+to add them.  This is what we have done for you in the class <code>Ball</code> which is 
+included in the module <tt>models.py</tt>
+</p>
+
+<p>
+Note that the class just includes specifications for the velocity attributes. You must
+create these in the class initializer. In addition, you will might want to create
+getters for these attributes. Remember that <tt>Gameplay</tt> is in a different module
+file, so it is not allowed to access any of the attributes in <tt>Ball</tt> directly,
+without using getters and setters.
+</p>
+
+<p>
+In our code, we have getters for the velocity, but we do not need any setters.  That
+is because the only time you change the velocity of the ball is when it bounces off
+something.  Therefore, we have methods to bounce the ball in our code instead of 
+setters.  You are welcome to do this, or you are welcome to use setters.  It is up
+to you.
+</p>
+
+<h4>Initialize the Ball</h4>
+
+<p>
+Once again, you should write a proper initializer, overriding the <code>__init__</code>
+method.  Remember to call the initializer of the parent class very first thing. When 
+you initialize the ball, it should be in the center of the window.  Keep in mind that 
+attributes <code>x</code> and <code>y</code> are the bottom-left corner, and not the 
+center of the ball. You might find the attributes <code>center_x</code> and 
+<code>center_y</code> useful.
+</p>
+
+<p>
+When you initialize the attribute <code>_vy</code>, the ball should head downward. 
+That means velocity should be negative.  We suggest you start with a value of
+-5.0 <code>_vy</code>; you can adjust this later as you see fit. The game would 
+be boring if every ball took the same course, so you should choose component 
+<code>_vx</code> randomly. Do this with the module 
+<a href="http://docs.python.org/2/library/random.html">random</a>, which 
+has functions for generating random numbers (you have already had some experience
+with this module in the previous assignment).
+</p>
+
+<p>
+To get you start, we suggest that you initialize <code>_vx</code> follows:
+</p><blockquote><code>
+self._vx = random.uniform(1.0,5.0) <br>
+self._vx = self._vx * random.choice([-1, 1])
+</code></blockquote>
+The first line sets <code>_vx</code> to be a random float in the range 1.0 to 5.0 (inclusive).
+The second line multiplies it by -1 half the time (e.g. making it negative).
+<p></p>
+
+<h4>Serve the Ball</h4>
+
+<p>
+Even though the ball is part of the game, when the ball is served is determined
+by the class <tt>Breakout</tt>.  That is because, when there is no ball, the game
+is paused, and pausing is controlled by <tt>Breakout</tt>. If you are unsure of 
+what we mean here, go back and look at the 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/subcontroller.py"><tt>subcontroller</tt></a> sample from class.
+</p>
+
+<p>
+Serving the ball is simple as assigning a new <tt>Ball</tt> object to the 
+attribute <code>_ball</code> in <tt>Gameplay</tt>.  You also need to 
+remember to draw the ball.  You draw the ball in the <tt>draw</tt> method of
+<tt>Gameplay</tt> because the ball is attribute of <tt>Gameplay</tt>
+
+</p><p>
+The difficult part is figuring out <i>when</i> to serve the ball.  An obvious time 
+to serve the ball is in the <code>__init__</code> method for <code>Gameplay</code>, 
+immediately after you create the bricks and the paddle.  But if you do this, then 
+the ball will move before the player can orient him- or herself to the game (and 
+hence the player will probably miss the ball). Ideally, we would like to delay the 
+ball by 3 seconds, giving the player time to get ready.
+</p>
+
+<p>
+That is why the state when you first start the game (setting up the bricks and paddle) is
+called <code>STATE_COUNTDOWN</code>.  Your <tt>Breakout</tt> controller is supposed to 
+delay for 3 seconds. After those 3 seconds are up, it should call a method in 
+<code>Gameplay</code> to create the ball.  It should also change the <tt>_state</tt>
+attribute in <tt>Breakout</tt> to <code>STATE_ACTIVE</code>.
+</p>
+
+<p>
+How do you delay something happening for 3 seconds? You are going to need yet another
+attribute (which you should specify) for keeping track of the time. For ideas on how
+to do this, look at how we time double clicks in the <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/samples/touch.py">etch-a-sketch</a> 
+demo. Once again, you should cite the source if you copy any code.
+</p>
+
+<p>
+<code>Breakout</code> is designed to run at 60 frames a second.  So once the timer 
+passes 60, you can safely assume that 1 second has passed. If you really want to be
+exact with your calculation, you can make use of the <code>dt</code> parameter in
+<code>update</code>. This parameter stores a float that is the time (in seconds)
+since the start of the last animation frame.
+</p>
+
+<h4>Move the Ball</h4>
+
+<p>
+To move the ball, you are going to need to add another method to <code>Gameplay</code>.
+You can name this method whatever you want, but we have called ours <code>moveBall</code>.
+This method should not be hidden, since the <tt>Breakout</tt> controller will call it 
+as part of <code>update</code> whenever the state is <code>STATE_ACTIVE</code>. The 
+purpose of this method is to move the ball and handle any physics. It is perhaps the 
+most complicated method in the entire assignment.
+</p>
+
+<p>
+Each time this meothd is called, it should move the ball one step and change the ball 
+direction if it hits a wall. <b>Do not worry about collisions with the bricks or
+paddle just yet</b>. For now, the ball will travel through them like a ghost.  
+You will deal with collisions in the next task.
+</p>
+
+<p>
+To move the ball one step, simply add the ball's velocity attributes to the ball's 
+corresponding position coordinates.  Since you are changing the attributes in the 
+ball object, we suggest that you make this a method in the <tt>Ball</tt> class.
+</p>
+
+<p>
+Once you have moved the ball one step,  you should check for a collision with a wall.  
+If the ball is going up, check if <i>any part of the ball</i> has a <i>y</i>-coordinate  
+greater than or equal to <code>GAME_HEIGHT</code>. In that case the ball has reached 
+the top and its direction has to be changed so that it goes down. You do this by setting 
+<code>_vy</code> attribute to -<code>_vy</code>.  As <tt>Gameplay</tt> cannot access
+the attribute <code>_vy</code> in <tt>Ball</tt> directly, this requires another method.
+</p>
+
+<p>
+Check the other three sides of the game board in the same fashion. 
+When you have finished this, the ball will bounce around the playing board forever 
+— until you stop it.
+</p>
+
+<p>
+Keep in mind that it is not enough to simply look at the <code>x</code> or 
+<code>y</code> position of the ball. You want to know when any part of the
+ball has reached (or gone over) one of the sides. For example, to see whether 
+the ball has gone over the right edge, you need to test whether the right side 
+of the ball is over that edge. However, the attribute <code>x</code> is the
+left side of the ball. See the attributes in <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/gobject.html"><code>GObject</code></a> 
+for clues on how to take care of this problem.
+</p>
+
+<p>
+<b>Try to finish this part by Wednesday, December 3</b>.  This is the bare minimum that
+we want from S/U students to pass the assignment.
+</p>
+
+<hr width="50%">
+
+<a name="basic-collisions"></a>
+<h3>Check for Collisions</h3>
+
+<p>
+Now comes the interesting part. In order to make Breakout into a real game, you have to be 
+able to tell when the ball collides with another object in the window. As scientists often 
+do, we make a simplifying assumption and then relax the assumption later. Suppose the ball 
+were a single point (<i>x</i>,<i>y</i>) rather than a circle. Then, for any <code>GObject</code>
+<code>gobj</code>, the method call
+</p><blockquote><code>
+gobj.contains(x,y)
+</code></blockquote>
+returns <code>True</code> if the point is inside of the object and <code>False</code> if
+it is not.
+<p></p>
+
+<p>
+However, the ball is not a single point. It occupies physical area, so it may collide with 
+something on the screen even though its center does not. The easiest thing to do — 
+which is typical of the simplifying assumptions made in real computer games  — is to 
+check a few carefully chosen points on the outside of the ball and see whether any of those 
+points has collided with anything. As soon as you find something at one of those points 
+(other than the ball, of course) you can declare that the ball has collided with that object.
+</p>
+
+<p>
+<img src="./CS1110_Assignment7_files/breakout_ball.png" alt="" width="274" height="115" hspace="10" vspace="10" align="right">
+One of the easiest ways to come up with these "carefully chosen points" is to treat everything
+in the game as rectangles. An <code>GEllipse</code> is defined in terms of its bounding rectangle 
+(i.e., the rectangle in which it is inscribed). Therefore the lower left corner of the ball is 
+at the point (<i>x</i>,<i>y</i>) and the other corners are at the locations shown in the diagram 
+to the right (<i>d</i> is the diameter of the ball). 
+These points are outside of the ball, but they are close enough to make it appear  that a 
+collision has occurred.</p>
+
+<p>
+You should write a hidden helper method for <code>Gameplay</code> called 
+<code>_getCollidingObject</code> with the following specification:
+</p>
+
+<pre>def _getCollidingObject(self):
+    <span style="color:00CC00">"""Returns: GObject that has collided with the ball
+    
+    This method checks the four corners of the ball, one at a 
+    time. If one of these points collides with either the paddle 
+    or a brick, it stops the checking immediately and returns the 
+    object involved in the collision. It returns None if no 
+    collision occurred."""</span>
+</pre>
+
+<p>
+You now need to modify the <code>moveBall</code> method of <code>Gameplay</code>, 
+<a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#basic-ball">discussed above</a>.  
+After moving the ball, call <code>_getCollidingObject</code> to check for a collision. 
+</p>
+
+<ul>
+	<li style="margin-top:3pt">
+	If the ball collides with the paddle going up , do not do anything (this prevents paddle "stickiness")
+	</li>
+	<li style="margin-top:3pt">
+	If the ball collides with the paddle going down, negate the vertical direction of the ball. 
+	</li>
+	<li style="margin-top:3pt">
+	If the ball collides with a brick in either vertical direction, remove the brick and negate the vertical direction.  
+	</li>
+</ul>
+
+<p>
+There is one more tricky step.  To determine whether or not the ball collided with a brick,
+you have to loop over all the bricks.  However, the bricks are stored in the <tt>BrickWall</tt>
+object.  Remember, <tt>Gameplay</tt> is not allowed to directly access any hidden attributes
+in <tt>BrickWall</tt>.  So you will need to add another method to <tt>BrickWall</tt>.  
+You can add a getter so that you can do the computation in <tt>Gameplay</tt>. Or you can
+write a method that does the computation in <tt>BrickWall</tt>.  The choice is up to you.
+</p>
+
+<p>
+Once you have completed this, you should be able to start playing a game.
+</p>
+
+<p>
+<b>Try to finish this part by Saturday, December 6.</b>. This is the hardest part
+of the assignment.  Other Ivy league universities (which we will not name) give a
+similar Breakout assignment, but they think this part is too hard for their students 
+and so they give them this part of the code.  You are better than that; you can do this.
+</p>
+
+<hr width="50%">
+
+<a name="basic-finish"></a>
+<h3>Finish the Game</h3>
+
+<p>
+You now have a (mostly) working game.  However, there are two minor details left for you
+to take care before you can say that the game is truly finished.
+</p>
+
+<h4>Player Lives</h4>
+
+<p>
+You need to take care of the case where the ball hits the bottom wall. Right now, the ball 
+just bounces off this wall like all the others, which makes the game really easy. In reality, 
+hitting the bottom means that the ball is gone. In a single game, the player should get three 
+balls before losing.  This requires a new attribute, perhaps in <code>Breakout</code>,
+<code>Gameplay</code>, or even <code>BrickWall</code>. We will let you decide where it best 
+fits.
+</p>
+
+<p>
+If the player can have another ball, the <code>update</code> method should change the
+state to <code>STATE_PAUSED</code> and display a message (as you did on the welcome screen) 
+that the player should click the screen to get a new ball.  As soon as the player clicks 
+the screen, switch the state to <code>STATE_COUNTDOWN</code> and prepare to serve a 
+new ball.
+</p>
+
+<h4>Winning or Losing</h4>
+
+<p>
+Eventually the game will end. Each time the ball drops off the bottom of the screen, you 
+need to check if there are any tries left. If not, the game is over.  Additionally, as
+part of the <code>update</code> method, you need to check whether there are no more bricks.
+As you have been storing the active bricks in attribute <code>_brick</code>, an easy way 
+to do this is to check the length of this list. When the list is empty, the game ends and 
+the player has won.  Once again, <code>Breakout</code> cannot access this attribute
+directly; you need a getter.
+</p>
+
+<p>
+When the game ends, and the player has either won or lost, you should put up one last 
+message.  Use a <code>GLabel</code> to put up a congratulating (or admonishing) message.
+Finally, you should change the state one last time to indicate that the game is over.
+This is the purpose of the state <code>STATE_COMPLETE</code>.
+</p>
+
+<p>
+<b>Try to finish this part by Sunday, December 7</b>. 
+</p>
+
+<hr>
+
+<a name="extend"></a>
+<h2>Extending the Game</h2>
+
+<p>
+If you have followed our suggested timeline, you now have three days to extend the game and 
+try to make it more fun.  In doing this, you might find yourself reorganizing a lot of the 
+code above.  You may add new methods, or change any of the methods you have written.  
+You may add new classes. For example, you may decide to make <code>Brick</code> a subclass 
+of <code>GRectangle</code> (as you did with <code>Ball</code> and <code>GEllipse</code>). 
+That way the various bricks can hold extra information (e.g. power-ups).  You can even change 
+any of the constants or add new ones.
+</p>
+
+<p>
+All of this is acceptable. Now that you have proved that you can get the code working,
+you are free to change it as you see fit. However, we highly suggest that you 
+<b>save a copy of the basic game in a separate folder before you start to make major changes</b>.  
+That way you have something to revert to if things go seriously awry when implementing your 
+extensions. Also, we suggest that you make sure to comment your code well in order to keep
+track of where you are in the coding process.
+</p>
+
+<p>
+Extensions <b>are not mandatory</b>, but they do affect grading. Add more and we will be 
+much more lenient with our grading than if you implemented the bare minimum (i.e. everything
+up to this point).  Hence they are a form of extra credit, but you cannot go over the
+maximum score for the assignment.  Note that a submission that does not have good 
+specifications for the helper methods or invariants for the new attributes will not 
+be looked at kindly under any circumstances.
+</p>
+
+<hr width="50%">
+
+<a name="expand-extensions"></a>
+<h3>Possible Extensions</h3>
+
+
+<p>
+Here are some possible ways to extend the game, though you should not be constrained by
+any of them.  Make the game you want to make.  We will reward originality more than
+we will reward quantity.  While this is a fairly simple game, the design space is
+wide open with possibilities.
+</p>
+
+<h4>Improve user control over bounces</h4>
+
+<p>
+The game gets rather boring if the only thing the player has to do is hit the ball. 
+Let the player control the ball by hitting it with different parts of the paddle. For 
+example, suppose the ball is coming down toward the right (or left). If it hits the left 
+(or right) 1/4 of the paddle, the ball goes back the way it came (both <code>_vx</code>
+and <code>_vy</code> are negated).
+</p>
+
+<h4>Implement "Try Again"</h4>
+
+<p>
+Let the player play as many games as they want. The player could click the mouse button 
+to start a new game. You will need to change how you handle your states to implement
+this.
+</p>
+
+<h4>Implement sound effects</h4>
+
+<p>
+A really easy extension is to add appropriate sounds for game events.  We have provided 
+several audio files in <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/A7.zip">A7.zip</a>.  You are not restricted by those; you 
+can easily find lots more.  However, remember that it is a violation of the Academic 
+Integrity Policy to use <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#academic-copyright">unlicensed copyrighted material</a>.
+</p>
+
+<p>
+To load an audio file, you simply create a <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/sound.html"><code>Sound</code></a> 
+object as follows:
+</p>
+
+<blockquote><code>
+bounceSound = Sound(<span style="color:00CC00">'bounce.wav'</span>)
+</code></blockquote>
+
+<p>
+Once it is loaded, you can play it whenever you want (such as when the ball hits something)
+by calling <code>bounceSound.play()</code>. The sound might get monotonous after a while, 
+so make the sounds vary, and figure out a way to let the user turn sound off (and on).
+</p>
+
+<p>
+Read the <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/sound.html">online specification</a> to see how to use Sound objects.  
+In particular, if you want to play the same sound multiple times simultaneously (such as 
+when you hit two bricks simultaneously), you will need two different Sound objects for the 
+same sound file.
+</p>
+
+<h4>Add a kicker</h4>
+
+<p>
+The arcade version of Breakout lures you in by starting off slowly. But as soon as you think 
+you are getting the hang of things, the ball speeds up, making life more exciting. Implement 
+this in some fashion, perhaps by doubling the horizontal velocity of the ball on the seventh 
+time it hits the paddle.
+</p>
+
+<h4>Keep score</h4>
+
+<p>
+Design some way to score the player's performance.  This could be as simple as the number
+of bricks destroyed.  However, you may want to make the bricks in the higher rows more
+valuable.  
+</p>
+
+<p>
+You should display the score at all times using a <a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/api/glabel.html"><code>GLabel</code></a><a> 
+object.  Where you display it is up to you (except do not keep the player from seeing the balls, 
+paddle, or bricks). <b>Do not need to make a new <code>GLabel</code> object each time the
+score changes</b>.  This will slow down the program tremendously. Simply change the 
+<code>text</code> attribute in your <code>GLabel</code> object.
+</a></p><a>
+
+<h4>Use your imagination</h4>
+
+</a><p><a>
+What else have you always wanted a game like this to do?  At some point your game might
+stop being like <i>Breakout</i> and be more like 
+<i></i></a><i><a href="http://en.wikipedia.org/wiki/Arkanoid">Arkanoid</a></i>.  Do not go too
+wild with the power-ups, however. We much prefer a few innovations that greatly improve
+the play.
+</p>
+
+<p>
+You can make any modifications to the gameplay you want, but the core gameplay of 
+bricks, paddle and balls should be there.  Please do not submit a copy of 
+<i><a href="http://en.wikipedia.org/wiki/Asteroids_(video_game)">Asteroids</a></i>.
+</p>
+
+<hr>
+
+<a name="finishing"></a>
+<h2>Completing the Assignment</h2>
+
+<p>
+Before submitting anything, test your program to see that it works. Play for a while and 
+make sure that as many parts of it as you can check are working. If you think everything 
+is working, try this: just before the ball is going to pass the paddle level, move the 
+paddle quickly so that the paddle collides with the ball rather than vice-versa. 
+Does everything still work, or does your ball seem to get "glued" to the paddle? 
+If you get this error, try to understand why it occurs and how you might fix it.
+</p>
+
+<p>
+When you are done, re-read the specifications of all your methods and functions (including 
+those we stubbed in for you), and be sure that your specifications are clear and that your 
+functions follow their specifications. If you implemented extensions, make sure your 
+documentation makes it very clear what your extensions are.
+</p>
+
+<p>
+As part of this assignment, we expect you to follow our style guidelines. 
+</p>
+
+<ol>
+	<li style="margin-top:3pt">
+	There are no tabs in the file, only spaces.
+	</li>
+	<li style="margin-top:3pt">
+	Classes are separated from each other by two blank lines.
+	</li>
+	<li style="margin-top:3pt">
+	Methods are separated from each other by a single blank line.
+	</li>
+	<li style="margin-top:3pt">
+	Class contents are ordered as follows: fields, properties, constructor, operators, methods.
+	</li>
+	<li style="margin-top:3pt">
+	Lines are short enough that horizontal scrolling is not necessary (about 80 chars is long enough).
+	</li>
+	<li style="margin-top:3pt">
+	The specifications for all of the methods and properties are complete.
+	</li>
+	<li style="margin-top:3pt">
+	Specifications are immediately after the method header and indented.
+	</li>
+	<li style="margin-top:3pt"><b>
+	No method is more than 40 lines long, including specification!
+	</b></li>
+</ol>
+
+<p>
+<b>There is a new coding convention which we have not yet explicitly stated</b>.  Non-hidden
+methods should be in camelCase.  That is, compound words are not separated by underscores,
+but instead have the first letter of each word (after the first) upper case.  This allows 
+us to distinguish methods from functions, as functions are all lower case separated by 
+underscores. You are allowed to break this convention with hidden helper methods, but not 
+in methods that are meant to be accessed by other classes.
+</p>
+
+<hr width="50%">
+
+<a name="finishing-turnin"></a>
+<h3>Turning it In</h3>
+
+<p>
+You are potentially modifying a lot of files in this assignment.  At a bare minimum, 
+your are modifying <code>breakout.py</code>, <code>gameplay.py</code>, and <code>models.py</code>. 
+You might be modifying <code>constants.py</code>. You might have extra art and sound files.
+</p>
+
+<p>
+In addition, you should create a text file called <code>extensions.txt</code>.  In 
+this file, you should write a <b>brief description of your extensions</b>. Tell us 
+what you were trying to do and how you did it.  If you used any art or sound assets that 
+required an attribution license, you should put that attribution here.
+</p>
+
+<p>
+To simplify the submission process, we are not asking you upload each individual file.
+Instead, put all your files in a zip file called <code>a7.zip</code> and submit this 
+instead.  We need to be able to play  your game, and if anything is missing, we cannot 
+play it.
+</p>
+
+<hr width="50%">
+
+<a name="finishing-survey"></a>
+<h3>Survey</h3>
+
+<p>
+One last time, we need you to do a survey.  The survey should be done individually (even 
+if you worked in a group).  As always, the survey will ask about things such as how 
+long you spent on the assignment, your impression of the difficulty, and what could 
+be done to improve it. Please try to complete the survey within a day of turning in
+this assignment. Remember that participation in surveys comprises 1% of your final grade.
+</p>
+
+<hr>
+
+<a name="faq"></a>
+<h2>Appendix: Frequently Asked Questions</h2>
+
+<p>
+Over the semesters that we have given out this assignment, there are a few questions that 
+get asked during office hours, Piazza, etc. rather frequently. For your convenience, 
+here is a list of some of them. (More may be added later on.) These are generally aimed 
+toward errors that do not necessarily produce explicit error messages, which make them 
+hard to debug.
+
+</p><hr width="50%">
+
+<p>
+<b>Q</b>: <i>
+I am getting an infinite loop somewhere in <code>update</code>, etc.; why?
+</i></p>
+
+<p>
+<b>A</b>: 
+Questions like these usually arise from a misunderstanding about how 
+<code>update</code> and <code>draw</code> work. These two functions are automatically 
+called by <code>game2d.py</code> on every frame of the game. Do not call them yourself 
+at any time. Anything that you put into one of these functions means that you intend 
+it to happen <b>every frame</b> (barring if-statements, etc.).
+</p>
+
+<hr width="50%">
+
+<p>
+<b>Q</b>:<i>
+Why is the first method for Breakout named <code>init</code>? Isn't it supposed to 
+be <code>__init__</code>? 
+</i></p>
+
+<p>
+<b>A</b>: 
+This relates to the question above.  The method <code>init</code> is not, strictly 
+speaking, Breakout's initializer (e.g. it does not create a new instance of 
+<code>GameApp</code>). That is handled by <code>game2d.py</code> again.  This is 
+the reason why you already have a <code>view</code> attribute once the <code>init</code>
+method starts, as well as a game window. After <code>game2d.py</code> creates a 
+<code>GameApp</code> instance (with its own initializer), it calls Breakout's 
+<code>init</code> once before moving on to <code>update</code> and <code>draw</code>.
+</p>
+
+<hr width="50%">
+
+<p>
+<b>Q</b>:<i>
+My paddle is mysteriously warping back to the middle every time I try to move it! What is happening? 
+</i></p>
+
+<p>
+<b>A</b>: 
+Try printing out the <code>id</code> of the paddle during <code>update</code>. Is it 
+different every time? If so, then that means that you are somehow throwing away the 
+old paddle and creating a brand new one on every frame of the game, which you probably 
+do not want to do. The paddle jumps back to the middle since that is presumably the 
+initial location you set it to.
+</p>
+
+<hr width="50%">
+
+<p>
+<b>Q</b>:<i>
+After the ball hits the right/left wall of the screen, it gets 'glued' there. Why? 
+</i></p>
+
+<p>
+<b>A</b>: 
+This is probably caused by a logic error in your wall collison code. As a hint toward 
+how to fix it, make sure the ball only bounces off the right wall when it is moving to 
+the right to begin with.
+</p>
+
+<hr width="50%">
+
+<p>
+<b>Q</b>:<i>
+You said that our program needs to work with any number of rows of bricks. But if we put 
+50+ rows of bricks then they overflow past the bottom of the screen and the game becomes 
+impossible to beat. Now what? 
+</i></p>
+
+<p>
+<b>A</b>: 
+You do not have to worry about this corner case. If your program works with 20+ rows and 
+the colors display properly, then that is fine.
+</p>
+
+<hr width="50%">
+
+<p>
+<b>Q</b>:<i>
+I want to create a background as one of my extensions. How do I do that? 
+</i></p>
+
+<p>
+<b>A</b>:
+Just draw a large <code>GRectangle</code> object that covers the screen. Make sure that 
+it is the very first thing you draw, as objects are drawn back-to-front (later objects 
+appear on top of earlier objects).
+</p>
+
+<hr width="50%">
+
+<p>
+<b>Q</b>:<i>
+It is annoying to have to constantly press down the mouse to move the paddle. Is there 
+a way to move the paddle just by moving the mouse without having to press down? 
+</i></p>
+
+<p>
+<b>A</b>:
+Unfortunately, there is not. This is a limitation of Kivy. It is designed for touch 
+screen devices where there is no such concept as moving without pressing down.  There
+is a new feature that suggests we might be able to get around this in Kivy 1.9.0, but
+that is a beta version of Kivy, and not the same as the one included in CornellExtensions.
+</p>
+
+<hr width="50%">
+
+<p>
+<b>Q</b>:<i>
+I tried right-clicking on the screen and some strange red dots appeared! What are they? 
+</i></p>
+
+<p>
+<b>A</b>:
+As we said in the previous question, Kivy is designed for mobile devices. Right-clicking 
+in any Kivy app is designed to simulate multi-touch on a touchscreen device (notice you 
+can right-click repeatedly to get more red dots, and drag those dots around after creating 
+them). Do not worry about it.
+</p>
+
+
+<br>
+	</quote></td>
+</tr>
+<tr>
+	<td id="footerLeft">
+	</td>
+	<td id="footerRight" nowrap="">
+	<b><em>Course Material Authors</em></b>: D. Gries, L. Lee, S. Marschner, &amp; W. White (over the years)
+	</td>
+</tr>
+</tbody></table>
+
+<div id="window-resizer-tooltip" style="display: block;"><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/assignments/assignment7/index.php#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">992</span> x <span class="tooltipHeight" id="winHeight">824</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">992</span> x <span class="tooltipHeight" id="vpHeight">708</span></div></body></html>

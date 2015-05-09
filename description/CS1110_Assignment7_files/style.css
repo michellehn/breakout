@@ -1,0 +1,385 @@
+body {
+	background-color: white;
+	font-size: 11pt;
+}
+
+table#bodyTable {
+	margin-left: 0 px;
+	margin-top: 0 px;
+	align: left;
+	border: collapse;
+}
+
+td#headerLeft{
+	background-color: #FEF5E5;
+	vertical-align: middle;
+	text-align: center;
+	width: 150px;
+	font-size: 12pt;
+	padding: 0px;
+	border-bottom: 1px solid #993333;
+}
+
+td#headerRight{
+	background-color: #FEF5E5;
+	vertical-align: top;
+	text-align: center;
+	width: 750px;
+	border-bottom: 1px solid #993333;
+}
+
+td#headerRight p#title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 24pt;
+	margin: 0pt;
+}
+
+td#headerRight p#term {
+	text-align: center;
+	font-weight: bold;
+	font-size:  22pt;
+	margin: 0pt;
+}
+
+td#footerLeft{
+	background-color: #FEF5E5;
+	vertical-align: middle;
+	text-align: center;
+	width: 150px;
+	height: 40px;
+	font-size: 14pt;
+	padding: 0px;
+	border-top: 1px solid #993333;
+}
+
+td#footerRight{
+	background-color: #FEF5E5;
+	vertical-align: middle;
+	text-align: center;
+	width: 750px;
+	height: 40px;
+	font-size: 14pt;
+	border-top: 1px solid #993333;
+}
+
+td#navMenu{
+	background-color: #FEF5E5;
+	vertical-align: top;
+	text-align: left;
+	margin-top: 0px;
+	font-size: 12pt;
+	padding-top: 10pt;
+	padding-left: 2ex;
+	width: 150px;
+	border-right: 1px solid #993333;
+}
+
+td#navMenu a#home {
+	font-size:  14pt;
+}
+
+td#mainContent{
+	background: #FFFFFF;
+	vertical-align: top;
+	text-align: left;
+	padding-top: 5pt;
+	padding-left: 5pt;
+	font-size: 12pt;
+	width: 700px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	color: #0000CC;
+}
+
+h3 {
+	color: #0099CC;
+}
+
+h3#alternate {
+	color: #8F0000;
+}
+
+h4 {
+	color: #0099CC;
+}
+
+h5 {
+	font-size: 100%;
+	font-style: italic;
+}
+
+dt#def {
+	padding-top:	0px;
+	margin-top: 	10px;
+	color: 			#930;
+	font-size: 		120%;
+	font-style: 	normal;
+	font-weight: 	bolder;
+}
+
+a#redlink {
+	font-weight: bold;
+	color: #CC0000;
+}
+
+pre#tight {
+	font-size:   95%
+}
+
+pre#expand {
+	font-size:   115%
+}
+
+#keyword {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size:   95%
+}
+
+#python {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:   95%
+}
+
+#colorboldblue {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #0000CC
+}
+
+table#instructors {
+	margin:  0;
+	padding: 0;
+	font-size: 12pt;
+}
+
+table#instructors td {
+	text-align: center;
+}
+
+table#instructors td#info {
+	font-size: 14pt;
+	text-align: left;
+}
+
+table#instructors p {
+	margin: 2pt;
+}
+
+table#internal {
+	border: 2px solid black;
+}
+
+table#internal th {
+	font-weight:		bold;
+	text-align:			center;
+	padding-left:  		4px;
+	padding-right: 		4px;
+	background-color: 	#E8E5FF;
+	border: 1px solid black;
+}
+
+table#internal td {
+	padding-left:  	4px;
+	padding-right: 	4px;
+	border: 1px solid black;
+}
+
+table#staff {
+	border: 2px solid black;
+}
+
+table#staff th {
+	font-weight:		bold;
+	text-align:			left;
+	vertical-align:		top;
+	padding-left:  		3px;
+	padding-right: 		3px;
+	border: 1px solid black;
+}
+
+table#staff td {
+	text-align:		left;
+	vertical-align:	top;
+	padding-left:  	3px;
+	padding-right: 	3px;
+	border: 1px solid black;
+}
+
+table#staff td#divider {
+	background-color: 	#E8E5FF;
+}
+
+table#schedule {
+	border: 2px solid black;
+}
+
+table#schedule th {
+	background-color: 	#E8E5FF;
+	font-weight:		bold;
+	text-align:			center;
+	vertical-align:		top;
+	padding-left:  		3px;
+	padding-right: 		3px;
+	border: 1px solid black;
+}
+
+table#schedule td {
+	vertical-align:	top;
+	padding-left:  	3px;
+	padding-right: 	3px;
+	border: 1px solid black;
+}
+
+table#schedule td#lecture {
+	background-color: #FFFFFF;
+}
+
+table#schedule td#lab {
+	background-color: #CCCCCC;
+}
+
+table#schedule td#break {
+	background-color: #0000FF;
+	color: 	  		  #FFFFFF;
+}
+
+table#schedule td#quiz {
+	background-color: #00CCCC;
+}
+
+table#schedule td#exam {
+	background-color: #FF5C5C;
+}
+
+table#tableofcontents {
+	border: 2px solid black;
+}
+
+table#tableofcontents th {
+	background-color: 	#E8E5FF;
+	text-align:  		center;
+	font-weight:		bold;
+	font-size: 			120%;
+	vertical-align:		top;
+	padding-left:  		3px;
+	padding-right: 		3px;
+	border: 1px solid black;
+}
+
+table#tableofcontents td {
+	text-align:  		left;
+	vertical-align:		top;
+	padding-left:  		3px;
+	padding-right: 		3px;
+	border: 1px solid black;
+}
+
+table#grading {
+	border-collapse:		collapse;
+	border-style: 			groove;
+	border-color: 			black;
+	border-right-width: 	2px;
+	border-left-width: 		2px;
+	border-top-width: 		2px;
+	border-bottom-width:	2px;
+}
+
+table#grading th {
+	background-color: 	#E8E5FF;
+	text-align:			center;
+	font-weight: 		bold;
+	border-style: 		solid;
+	border-color: 		black;
+	border-top-width: 	2px;
+	padding-right: 		5px;
+	padding-left: 		5px;
+}
+
+table#grading td {
+	text-align:			center;
+	border-style: 		dotted;
+	border-color: 		black;
+	border-top-width: 	1px;
+	padding-right: 		5px;
+	padding-left: 		5px;
+}
+
+table#examarchive {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table#examarchive td {
+	padding-right: 		20px;
+	padding-left: 		20px;
+	border: 1px solid black;
+}
+
+table#materials {
+	border: 2px solid black;
+}
+
+table#materials th {
+	background-color: 	#E8E5FF;
+	font-weight:		bold;
+	text-align:			center;
+	vertical-align:		top;
+	padding-left:  		10px;
+	padding-right: 		10px;
+	border: 1px solid black;
+}
+
+table#materials td {
+	padding-left:  	10px;
+	padding-right: 	10px;
+	vertical-align:	top;
+	border: 1px solid black;
+}
+
+
+table#faq {
+	border: 0; 
+	border-collapse: collapse;
+}
+
+table#faq td {
+	border-style: dotted;
+	border-color: black;
+	border-right-width: 0;
+	border-left-width: 	0;
+	border-top-width: 	0;
+	border-bottom-width: 1px;
+	padding: 3px
+}
+
+table#faq tr#section {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #0000CC
+}
+
+table#faq tr#section td {
+	border-style: solid;
+	border-color: black;
+	border-right-width: 0;
+	border-left-width: 	0;
+	border-top-width: 	0;
+	border-bottom-width: 1px;
+}
+
+p#large {
+	font-size: 120%;
+}
+
+p#itbd {
+	font-weight: bold;
+	font-style: italic;
+}
